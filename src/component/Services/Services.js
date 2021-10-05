@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
 
 const Services = (props) => {
-    const {name,image,duration,description,price}=props.service;
+    const { name,image,duration,description,price }=props.service||{}
     return (
         <div>
-            <Row xs={1} md={2} className="g-4">
+           
     <Col>
       <Card>
         <Card.Img variant="top" src={image} />
@@ -14,15 +14,15 @@ const Services = (props) => {
           <Card.Title>{name}</Card.Title>
           <Card.Text>
             {description}
-            <small>{duration}</small>
-            <h4>Price:$ {price}</h4>
-            <Button>Enroll Now</Button>
+            <p>{duration}</p>
+            
           </Card.Text>
+          <h4>Price:$ {price}</h4>
+            <Button>Enroll Now</Button>
         </Card.Body>
       </Card>
     </Col>
   
-</Row>
         </div>
     );
 };

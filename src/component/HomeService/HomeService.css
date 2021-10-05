@@ -1,0 +1,8 @@
+.intro{
+    background-image: url('https://images.unsplash.com/photo-1581009137042-c552e485697a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvcmtvdXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:whitesmoke;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}

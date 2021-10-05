@@ -8,54 +8,45 @@ import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import NotFound from './component/NotFound/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DIetPlans from './component/DietPlans/DIetPlans';
-import { useEffect, useState } from 'react';
-
+import ServiceLoad from './component/ServiceLoad/ServiceLoad';
+import Dietdata from './component/DIetData/Dietdata';
+import HomeService from './component/HomeService/HomeService';
+import Footer from './component/Footer/Footer';
 
 function App() {
-  const [services, setServices] = useState([]);
-  useEffect(()=>{
-fetch('./gym.json').then(res=>res.json()).then(data=>setServices(data))
-
-
-  },[services])
+ 
   return (
     <div className="App">
      <div>
      <Router>
         <Header></Header>
         <Switch>
-          <Route exact path="/">
-            <Home></Home>
+          <Route exact  path="/">
+          <HomeService></HomeService>
+            
           </Route>
           <Route exact path="/home">
-            <Home></Home></Route>
-          <Route exact path="/about">
+            <HomeService></HomeService>
+            </Route>
+          <Route  path="/about">
             <About></About>
           </Route>
-          <Route  path="/services">
-            <Services></Services>
+          <Route exact  path="/services">
+            <ServiceLoad></ServiceLoad>
+            
           </Route>
           <Route  path="/dietPlans">
-           <DIetPlans></DIetPlans>
+            <Dietdata></Dietdata>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
         
       </Router>
      </div>
-     <div>
-    {
-      services.slice(0,3).map(service=><Home key={service.name} service={service}></Home>)
-     }
-     </div>
-     <div>
-       {
-         services.map(service=><Services key={service.name} service={service}></Services>)
-         
-       }
-     </div>
+     
     </div>
   );
 }

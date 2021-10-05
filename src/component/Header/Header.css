@@ -1,13 +1,9 @@
-.nav-link{
-    text-decoration: none;
-    margin-left: 50px;
-    
-    
-}
+
 .nav{
     background-color: black;
-    color: cornsilk;
+    color: #fff8dc;
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
 
 }
