@@ -1,13 +1,10 @@
 
 import './App.css';
-import Home from './component/Home/Home';
 import Header from './component/Header/Header'
-import Services from './component/Services/Services'
 import About from './component/About/About'
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import NotFound from './component/NotFound/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DIetPlans from './component/DietPlans/DIetPlans';
 import ServiceLoad from './component/ServiceLoad/ServiceLoad';
 import Dietdata from './component/DIetData/Dietdata';
 import HomeService from './component/HomeService/HomeService';
