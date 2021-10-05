@@ -2,8 +2,6 @@
 .nav{
     background-color: black;
     color: #fff8dc;
-    display: flex;
-    flex-direction: row;
     margin-bottom: 40px;
-
+    
 }

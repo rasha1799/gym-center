@@ -18,12 +18,12 @@ const Header = () => {
             </h1>
             </div>
 
-           <div>
-           <Nav variant='pills'>
-            <NavLink className='text-decoration-none ms-5' activeStyle={activeStyle}  to="/home">Home</NavLink>
-            <NavLink className='text-decoration-none ms-5' activeStyle={activeStyle} to="/about">About</NavLink>
-            <NavLink  className='text-decoration-none ms-5' activeStyle={activeStyle} to="/Services">Services</NavLink>
-            <NavLink  className='text-decoration-none ms-5' activeStyle={activeStyle}  to="/DietPlans" >Diet Plans</NavLink>
+           <div className="mt-6">
+           <Nav variant='pills' >
+            <NavLink className='text-decoration-none  ms-5' activeStyle={activeStyle}  to="/home">Home</NavLink>
+            <NavLink className='text-decoration-none  ms-5' activeStyle={activeStyle} to="/about">About</NavLink>
+            <NavLink  className='text-decoration-none  ms-5' activeStyle={activeStyle} to="/Services">Services</NavLink>
+            <NavLink  className='text-decoration-none ms-5 ' activeStyle={activeStyle}  to="/DietPlans" >Diet Plans</NavLink>
           </Nav>
 
            </div>
